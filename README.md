@@ -1,4 +1,7 @@
 # mySimulations
-Basic python practise, all suggestions are welcome.
+Basic python practise
 
-it think this change will help...
+- all suggestions are welcome.
+
+- I learn by myself and are not a part of any programming comunity, LF friends
+
