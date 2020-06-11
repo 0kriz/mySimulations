@@ -1,0 +1,15 @@
+
+
+This is a simulation of the relationship between a person and a company
+
+persons are "profile" objects (bank accounts)
+company can:
+- import goods (adds product amount in storage, remove order price from balance)
+- sell gods (reduce storage, add food to person,
+  add total price to company balance, remove total price from person balance)
+- hire employee (define persons job status as "job description",
+  define salary, add employee to company employee list
+
+person can:
+- make transactions with other persons
+
