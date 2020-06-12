@@ -3,13 +3,39 @@
 This is a simulation of the relationship between a person and a company
 
 persons are "profile" objects (bank accounts)
+
+company.py
 company can:
-- import goods (adds product amount in storage, remove order price from balance)
-- sell gods (reduce storage, add food to person,
+- import goods() (adds product amount in storage, remove order price from balance)
+- sell gods() (reduce storage, add food to person,
   add total price to company balance, remove total price from person balance)
-- hire employee (define persons job status as "job description",
+- hire() employee (define persons job status as "job description",
   define salary, add employee to company employee list
 
+profile.py
 person can:
 - make transactions with other persons
 
+Static functions
+Make person(name):
+    - Make a profile object and insert it into a list of profile objects
+    - if argument is "x" the function auto generate a name
+
+
+runFile.py
+runFile.py does:
+- a simulation of a "day"
+    - salary is payed from company to employer
+    - food is imported to food store
+    - all persons lose 1 food
+    - every 31 day, loans are payed by all persons
+
+
+TO DO:
+
+- add so each person lose food every day*
+- make bank have employee and be defined as a company 1/2
+- make automatic down payment of loan by every person every 31 day*
+- make accessories file
+    - make house (class)
+    - make car (class)
