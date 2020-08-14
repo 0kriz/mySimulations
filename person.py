@@ -1,5 +1,6 @@
-# Person
 
+
+# Person
 import random
 from random import randint
 
@@ -14,6 +15,7 @@ Female_names = ["Emma", "Olivia", "Ava", "Isabella", "Sophia", "Charlotte", "Mia
                 "Riley", "Zoey", "Nora"]
 
 population = []
+dead = []
 
 
 def person_generator(amount):
@@ -54,6 +56,16 @@ class Person:
             self.food = self.food - 1
         else:
             self.health = self.health - (self.health/10)
+
+    def hunger(self):
+        self.food -= 3
+
+    def starve(self):
+        self.health -= 10
+
+    def die(self):
+        dead.append(self)
+        population.remove(self)
 
     def buy_food(self, amount):
         if self.money > amount*3 and self.food_store != "No food store":
